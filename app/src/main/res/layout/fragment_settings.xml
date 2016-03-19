@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="General Settings"
+        android:id="@+id/settings1"
+        android:layout_weight="0.1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Android Bugfixes"
+        android:id="@+id/settings2"
+        android:textColor="#000000"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use compatible mode (deprecated)"
+        android:id="@+id/settings_UseCompatibleMode"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_weight="0.03"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="At least some Samsung devices need this, but doesn&apos;t support newer technologies like LTE."
+        android:id="@+id/settings3"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.01"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Interval Measurement Updates"
+        android:id="@+id/settings4"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Select a value between 0.25s and 10s."
+        android:id="@+id/settings5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_UpdateInterval"
+        android:layout_weight="0.03"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:max="9750" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Choose Google Maps Type"
+        android:id="@+id/settings7"
+        android:layout_weight="0.1"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:id="@+id/settings_MapType"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="0.01" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Note:\nEventually, you have to switch into &quot;2G only&quot; mode to get reasonable results. This is a confirmed bug in Android (as of March 2016)."
+        android:id="@+id/settings6"
+        android:layout_weight="0.1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#ff0000" />
+
+    <Button
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:text="Clear Measurement Cache"
+        android:id="@+id/settings_ClearCache"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:text="Clear Settings"
+        android:id="@+id/settings_ClearSettings"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
